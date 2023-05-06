@@ -1,0 +1,229 @@
+        body {
+            margin: auto;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lexend Deca', sans-serif;
+            /* color: hsl(0, 0%, 95%); */
+        }
+
+        main {
+            max-width: 100%;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            margin: 10px 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .Products {
+            display: flex;
+            margin: 20%;
+        }
+
+
+        p {
+            letter-spacing: 1px;
+        }
+
+        .attribution {
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .attribution a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: hsl(217, 76%, 42%);
+        }
+
+        .links-item {
+            list-style: none;
+        }
+
+        .links-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .links-item a:hover {
+            color: orange;
+        }
+
+
+        /* HEADER */
+        header {
+            position: relative;
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 60px;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: hsl(31, 77%, 52%);
+            pointer-events: none;
+
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        /* HOME SECTION */
+        .Home {
+            color: hsl(31, 77%, 52%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            background-image: url(./images/cars-4-1507600.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .Home h2 {
+            font-size: 5rem;
+            margin: 0;
+            color: #E38826;
+        }
+
+        /* About Section */
+        .About {
+            height: auto;
+        }
+
+        .About .description {
+            width: 50%;
+        }
+
+        .pic img {
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+
+        .feature {
+            display: flex;
+            gap: 20%;
+            align-items: center;
+            padding: 20px 10%;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Products  */
+        .goods {
+            background-color: #3a3a3a;
+        }
+
+        /* Footer */
+        .Contact {
+            display: flex;
+            align-items: center;
+            background-color: #e38826;
+            height: 30vh;
+        }
+
+        .contact-container {
+            padding: 0 10%;
+        }
+
+        .contact-list {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .contact-items a {
+            text-decoration: none;
+            color: #e38826;
+        }
+
+        .contact-items a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-items {
+            width: 35%;
+            padding: 5px;
+        }
+
+        h3 {
+            color: #3a3a3a;
+            font-size: 16px;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            body {
+                max-width: 100%;
+                margin: auto;
+            }
+
+            header {
+                display: block;
+            }
+
+            .Home {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .navbar .links {
+                display: none;
+            }
+
+            /* .Products {
+        display: block;
+        text-align: center;
+    }
+    button {
+        width: 100%;
+    }
+    .sedan {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px; */
+            /* } */
+            section .feature {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                align-items: start;
+            }
+
+            .feature .description {
+                width: 100%;
+            }
+
+            .pic img {
+                height: 30vh;
+                width: 100vw;
+                border-radius: 0;
+            }
+        }
